@@ -13,8 +13,13 @@ public class Codifica20204032 implements Codifica {
     }
 
     @Override
-    public String codifica(String str) {
+    public String codifica(String str) {//troca vogais por numeros
         
+        str=str.replace("a", "4");
+        str=str.replace("e", "3");
+        str=str.replace("i", "1");
+        str=str.replace("o", "0");
+        str=str.replace("u", "8");
 
         return str;
     }
@@ -22,7 +27,7 @@ public class Codifica20204032 implements Codifica {
     @Override
     public String decodifica(String str) {
         
-        
+
         return str;
     }
     
