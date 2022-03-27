@@ -20,8 +20,9 @@ public class App {
         System.out.println("----------------------------------");
     }
 
-    public static void main(String args[]) {
-        Path filesPath = Paths.get("..", "Codificadores");
+    public static void main(String args[]) throws IOException {//estou no windows e
+        String currentPath = new java.io.File(".").getCanonicalPath();//não estava conseguindo rodar o programa, então
+        Path filesPath = Paths.get(currentPath, "Codificadores");//precisei mudar essas 3 linhas pra fazer funcionar
         System.out.println("Pasta:"+filesPath.getFileName());
         List<String> codificadores = null;
 
