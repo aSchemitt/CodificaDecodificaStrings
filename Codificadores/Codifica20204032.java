@@ -19,7 +19,7 @@ public class Codifica20204032 implements Codifica {
         str=str.replace("e", "3");
         str=str.replace("i", "1");
         str=str.replace("o", "0");
-        str=str.replace("u", "8");
+        str=str.replace("u", "9");
 
         return str;
     }
@@ -31,7 +31,7 @@ public class Codifica20204032 implements Codifica {
         str=str.replace("3", "e");
         str=str.replace("1", "i");
         str=str.replace("0", "o");
-        str=str.replace("8", "u");
+        str=str.replace("9", "u");
 
         return str;
     }
